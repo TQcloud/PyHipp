@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Number of hkl files"
-find . -name "*.hkl" |grep -v -e spiketrain -e mountains | wc -l
+find . -name "*.hkl" |grep -v -e spiketrain -e mountains | wc -1
 
 echo "Number of mda files"
 find mountains -name "firings.mda" | wc -l
@@ -11,4 +11,3 @@ head -n 1 *.out
 
 echo "End Times"
 tail -n 5 *.out
-
